@@ -14,7 +14,7 @@ app.use(cors({
 DBconnection();
 app.use("/api/auth",authRoute);
 app.use("/",(req,res)=>{
-    res.status(200).json({data: "Logged in Successfully"});
+    res.status(200).json({data: "Authentication Project"});
 });
 console.log("App is working");
 module.exports=app;

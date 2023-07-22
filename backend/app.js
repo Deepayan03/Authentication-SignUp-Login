@@ -13,8 +13,8 @@ app.use(cors({
 }));
 DBconnection();
 app.use("/api/auth",authRoute);
-app.use("/login",(req,res)=>{
-    res.status(200).json({data: "This is Deepayans server"});
+app.use("/",(req,res)=>{
+    res.status(200).json({data: "Logged in Successfully"});
 });
 console.log("App is working");
 module.exports=app;
